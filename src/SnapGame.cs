@@ -8,7 +8,7 @@ namespace CardGames
 	{
 		public static void LoadResources ()
 		{
-			SwinGame.DrawBitmap ("CardsBoard.png", 0, 0);
+			
 			Bitmap cards;
 			cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
 			SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 150, 53);      // set the cells in the bitmap to match the cards
@@ -52,7 +52,7 @@ namespace CardGames
 		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
 		private static void DrawGame (Snap myGame)
 		{
-			
+			SwinGame.DrawBitmap ("CardsBoard.png", 0, 0);
 
 			SwinGame.LoadFontNamed ("GameFont", "Chunkfive.otf", 20);
 			// Draw the top card
